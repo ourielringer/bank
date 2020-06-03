@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+
+h1{
+    color : brown;
+    size: 12px;
+    border: 1px solid black ;
+}
+
+.account,.transaction{
+    border: 3px solid rgb(18, 39, 219);
+    margin: 5px ;
+    padding: 5px;
+    color: rgb(19, 6, 54);
+    background: rgb(117, 110, 110);
+    border-radius: 12px;
+}
+
+.accoun-list ,.details-panel{
+    height: 35vh;
+    width: 500px;
+    margin: auto;
+    overflow: auto;
+}
+
+.account:hover, .transaction:hover{
+    background: gray;
+    color :red
+}
