@@ -38,7 +38,7 @@ function bankStart() {
 function init() {
     let allAccountDiv = document.querySelectorAll(".account")
 
-    
+
 
     allAccountDiv.forEach(accDiv => {
         accDiv.onclick = function (ev) {
@@ -46,7 +46,9 @@ function init() {
             let myAccDiv = ev.target.closest('.account')
             let accontid = myAccDiv.querySelector('span').textContent
             let listTra = getTransactionByAccountId(accontid)
-            document.querySelector(".details-panel").innerHTML = render(templet.transaction, listTra)
+            let h = `<h2> detail for accont ${accontid}`
+            h += render(templet.transaction, listTra)
+            document.querySelector(".details-panel").innerHTML = h
         }
     });
 }

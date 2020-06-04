@@ -11,7 +11,7 @@ function render(template, dataArr){
    
     dataArr.forEach(item => {
         let itemHtml = template
-        propertiesInTemplate.forEach(p =>{
+        propertiesInTemplate.forEach(p => {
             
             let propValue = item[p]
             itemHtml = itemHtml.replace(`[${p}]`, propValue)
